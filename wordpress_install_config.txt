@@ -83,7 +83,19 @@ del sitio, usuario, contraseña, correo, otros.
 # apt-get install apache2
 
 // Instalamos MySQL server y lo configuramos
-# apt-get install mysql-server
+# apt-get install mysql-server mysql-client
+
+// Configuración de MySQL
+# mysql_secure_instalacion
+
+////Opcional instalar phpmyadmin
+# apt-get install phpadmin
+
+# phpenmod mcrypt
+# phpenmod mbstring
+# mysqld -- initialize
+# systemctl status mysql.service
+# systemctl start mysql
 
 // Instalamos php, en este caso el 5
 # apt-get install php5 php5-gd php5-mysql libapache2-mod-php5
